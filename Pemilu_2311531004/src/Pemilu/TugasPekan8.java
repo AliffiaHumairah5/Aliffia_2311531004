@@ -61,32 +61,33 @@ public class TugasPekan8 extends JFrame {
 		contentPane.add(lblMAHASISWA);
 		
 		JLabel lblNAMA = new JLabel("NAMA : ");
-		lblNAMA.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblNAMA.setBounds(21, 48, 62, 14);
+		lblNAMA.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		contentPane.add(lblNAMA);
 		
 		JLabel lblNIM = new JLabel("NIM :");
-		lblNIM.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblNIM.setBounds(21, 86, 46, 14);
+		lblNIM.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		contentPane.add(lblNIM);
 		
 		JComboBox CBJurusan = new JComboBox();
+		CBJurusan.setBounds(93, 114, 118, 22);
 		CBJurusan.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		CBJurusan.setModel(new DefaultComboBoxModel(new String[] {"Teknik Komputer", "Sistem Informasi", "Informatika"}));
-		CBJurusan.setBounds(93, 114, 118, 22);
 		contentPane.add(CBJurusan);
 		
 		JLabel lblJURUSAN = new JLabel("JURUSAN : ");
-		lblJURUSAN.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblJURUSAN.setBounds(21, 118, 84, 14);
+		lblJURUSAN.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		contentPane.add(lblJURUSAN);
 		
 		JLabel lblinfo = new JLabel("");
-		lblinfo.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblinfo.setBounds(21, 143, 407, 54);
+		lblinfo.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		contentPane.add(lblinfo);
 		
 		JButton btnNewButton = new JButton("RESET");
+		btnNewButton.setBounds(43, 208, 89, 23);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				textNAMA.setText("");
@@ -97,10 +98,10 @@ public class TugasPekan8 extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 12));
-		btnNewButton.setBounds(43, 208, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("PROSES");
+		btnNewButton_1.setBounds(301, 208, 89, 23);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String n=textNAMA.getText();
@@ -115,19 +116,18 @@ public class TugasPekan8 extends JFrame {
 		
 		
 		btnNewButton_1.setFont(new Font("Times New Roman", Font.BOLD, 12));
-		btnNewButton_1.setBounds(301, 208, 89, 23);
 		contentPane.add(btnNewButton_1);
 		
 		textNAMA = new JTextField();
-		textNAMA.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		textNAMA.setBounds(93, 45, 209, 20);
+		textNAMA.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		contentPane.add(textNAMA);
 		textNAMA.setColumns(10);
 		
 		textNIM = new JTextField();
+		textNIM.setBounds(93, 83, 152, 20);
 		textNIM.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		textNIM.setColumns(10);
-		textNIM.setBounds(93, 83, 152, 20);
 		contentPane.add(textNIM);
 		
 		
